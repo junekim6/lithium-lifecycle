@@ -4,16 +4,23 @@
 	 x="0px" y="0px" viewBox="0 0 390 620" overflow="visible" xml:space="preserve">
 <g>
 	
-		<path id="aus-path_00000140708263873903906270000013627241396193596334_" fill="none" stroke="#FF6989" stroke-width="2.5" stroke-linecap="round" d="
+		<path id="aus-path_00000142869157848382513730000005088237426062491562_" fill="none" stroke="#FF6989" stroke-width="2.5" stroke-linecap="round" d="
 		M39.185,517.37c15.212,0,15.212-4.191,30.424-4.191s15.212,10.896,30.424,10.896s15.212-9.639,30.424-9.639
 		s15.212,2.095,30.424,2.095s15.212-8.801,30.424-8.801s15.212-30.593,30.424-30.593c15.212,0,15.212-149.611,30.424-149.611
 		c15.212,0,15.212,50.29,30.424,50.29c15.212,0,15.212,20.954,30.424,20.954s15.212-64.538,30.424-64.538
 		s15.212-23.468,30.424-23.468"/>
 	
-		<path id="us-path_00000086673243710331059420000011077841009343728567_" fill="none" stroke="#00E7FF" stroke-width="2.5" stroke-linecap="round" d="
+		<path id="us-path_00000156548051934092273660000016154572650554819770_" fill="none" stroke="#00E7FF" stroke-width="2.5" stroke-linecap="round" d="
 		M39.185,563.888c15.212,0,15.212,1.257,30.424,1.257s15.212,0,30.424,0s15.212,0,30.424,0s15.212,0,30.424,0
 		s15.212-0.419,30.424-0.419s15.212-1.676,30.424-1.676c15.212,0,15.212-1.676,30.424-1.676c15.212,0,15.212,1.257,30.424,1.257
 		c15.212,0,15.212,2.515,30.424,2.515s15.212-2.515,30.424-2.515s15.212,1.257,30.424,1.257"/>
+	<g id="arrow-2_00000052063544580774846850000007017682970336948375_">
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M130.169,152.683c-0.45,9.239-0.61,37.266,18.354,63.946
+			c21.406,30.115,53.166,38.801,67.839,41.324"/>
+		<g>
+			<polygon fill="#FFFFFF" points="214.211,262.592 223.476,258.905 215.65,252.724 			"/>
+		</g>
+	</g>
 </g>
 <style>
 #g-production2-mobile-interaction-img rect, #g-production2-mobile-interaction-img circle, #g-production2-mobile-interaction-img path, #g-production2-mobile-interaction-img line, #g-production2-mobile-interaction-img polyline, #g-production2-mobile-interaction-img polygon { vector-effect: non-scaling-stroke; }

@@ -252,9 +252,28 @@ p.chart-source {
     margin: 0;
 }
 
+/* Silver Peak Mine Scrollytelling */
+.mine {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+}
 
+#silverpeak {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-
+#scrolly3 {
+    position: relative;
+    /* padding: 1rem; */
+  }
 
 /* photos */
 
@@ -352,13 +371,6 @@ p.caption {
     /* padding: 1rem; */
   }
 
-  .scrolly-overlay {
-    position: relative;
-    padding: 0;
-    max-width: 35rem;
-    margin: 0 auto;
-  }
-
   .sticky-thing {
     position: -webkit-sticky;
     position: sticky;
@@ -385,8 +397,8 @@ p.caption {
 
   .step p {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding: 1rem;
+    text-align: left;
+    padding: 1rem 2rem;
     font-size: 1.18rem;
   }
 
@@ -430,14 +442,17 @@ p.caption {
 #g-production2-large,
 #g-production2-mobile,
 #g-end-use-mobile,
-#g-us_imports-mobile
+#g-us_imports-mobile,
+#g-recycled2-medium,
+#g-recycled2-mobile
  {
     display: none;
 }
 
 @media (max-width: 480px) {
     #g-end-use-mobile,
-    #g-production2-mobile {
+    #g-production2-mobile,
+    #g-recycled2-mobile {
         display: block;
     }
 }
@@ -451,7 +466,8 @@ p.caption {
 
 @media (min-width: 480px) {
     #g-reserve-large,
-    #g-production2-large {
+    #g-production2-large,
+    #g-recycled2-medium {
         display: block;
     }
 }
