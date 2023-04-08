@@ -164,7 +164,7 @@ h2.subhead {
 }
 
 p.body-text {
-    font-size: 1.25rem;
+    font-size: 1.19rem;
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 15px;
@@ -334,8 +334,101 @@ p.caption {
     }
 }
 
+/* These are styles for scrollytelling */
+#scrolly {
+    position: relative;
+    /* padding: 1rem; */
+  }
+
+  .scrolly-overlay {
+    position: relative;
+    padding: 0;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  #scrolly2 {
+    position: relative;
+    /* padding: 1rem; */
+  }
+
+  .scrolly-overlay {
+    position: relative;
+    padding: 0;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    /* Center everything inside */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .step {
+    margin: 0 auto 2rem auto;
+    margin-bottom: 45rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 15px;
+  }
+
+  .step p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.18rem;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  /* When it's less than 700 pixels wide, do normal scrollytelling */
+
+  @media only screen and (min-width: 700px) {
+    #scrolly.side-by-side {
+      display: flex;
+    }
+
+    #scrolly.side-by-side > div {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75em;
+    }
+
+    #scrolly.side-by-side .scrolly-overlay {
+      margin-top: 70vh;
+      order: 0;
+      /* Change these to adjust sizing options */
+      min-width: 15rem;
+      max-width: 20rem;
+    }
+
+    #scrolly.side-by-side .sticky-thing {
+      order: 1;
+      flex-grow: 2;
+    }
+  }
+
+
 /* These are the styles for ai2html */
 
+#g-reserve-large,
+#g-reserve-mobile,
+#g-production2-large,
+#g-production2-mobile,
 #g-end-use-mobile,
 #g-us_imports-mobile
  {
@@ -343,9 +436,8 @@ p.caption {
 }
 
 @media (max-width: 480px) {
-    #g-re-growth-mobile,
-    #g-capacity_generation_chart-mobile,
-    #g-curtailment-frequency-mobile {
+    #g-end-use-mobile,
+    #g-production2-mobile {
         display: block;
     }
 }
@@ -358,9 +450,8 @@ p.caption {
 } */
 
 @media (min-width: 480px) {
-    #g-re-growth-medium,
-    #g-capacity_generation_chart-medium,
-    #g-curtailment-frequency-medium {
+    #g-reserve-large,
+    #g-production2-large {
         display: block;
     }
 }

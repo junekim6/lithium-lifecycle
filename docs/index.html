@@ -18,7 +18,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
     <title>June Kim</title>
 </head>
     
@@ -32,22 +34,25 @@
         </ul>
     </nav> -->
 
-    <div class="header">
+    <div class="header" style="margin-top: 15vh;">
         <!-- <p class="kicker sans-serif">CLIMATE & Energy</p> -->
         <h1 class="headline">Follow The Lifycycle of a Lithium-Ion Battery</h1>
         <h2 class="subhead sans-serif">From underground to the recyling station.</h2>
+
+		<section style="text-align: center; margin-top: 90px; margin-bottom: 100px;">
+			<img src="visuals/battery.gif" style="width:50%;"></img>
+		</section>
+
         <p class="byline">By June Kim | <a href="https://github.com/junekim6/jeju-curtailment">Get the data</a></p>
         <p class="date">April 9, 2023</p>
 	</div>
 
-	<section class="photo-section">
-		<img src="silver peak.jpg" class="photo"></img>
-	</section>
 
-	<section class="story-body" style="margin-top: 80px">
-		<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+
+	<section class="story-body" style="margin-top: 60px">
+		<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
 	
-		<p class="body-text serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+		<p class="body-text sans-serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
 	</section>
 
 	<h2 class="hr-lines" style="margin-top: 80px; margin-bottom: 60px;"> From Underground </h2>	
@@ -152,11 +157,17 @@
 </section>
 
 <section class="story-body">
-	<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+	<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
 </section>
 
-<section class="chart">
-<!-- Generated by ai2html v0.111.0 - 2023-04-03 09:03 -->
+<section class="chart" id="scrolly">
+	<div class="sticky-thing">
+
+
+
+
+
+<!-- Generated by ai2html v0.111.0 - 2023-04-07 21:33 -->
 <!-- ai file: reserve.ai -->
 <style media="screen,print">
 	#g-reserve-box ,
@@ -217,196 +228,21 @@
 	#g-reserve-large .g-pstyle3 {
 		line-height:19px;
 		height:19px;
+		font-size:17px;
+		text-align:center;
 	}
-
-</style>
-
-<div id="g-reserve-box" class="ai2html">
-
-	<!-- Artboard: large -->
-	<div id="g-reserve-large" class="g-artboard" style="max-width: 1040px;max-height: 701px" data-aspect-ratio="1.484" data-min-width="0">
-<div style="padding: 0 0 67.4038% 0;"></div>
-		<img id="g-reserve-large-img" class="g-reserve-large-img g-aiImg" alt="" src="reserve-large.png"/>
-		<div id="g-ai0-1" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:1.6331%;margin-top:-8.4px;left:9.8361%;width:175px;">
-			<p class="g-pstyle0">Lithium Reserve (tons)</p>
-		</div>
-		<div id="g-ai0-2" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:5.3421%;margin-top:-10.4px;left:10.3494%;width:52px;">
-			<p class="g-pstyle1">21M</p>
-		</div>
-		<div id="g-ai0-3" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:5.5561%;margin-top:-9.9px;left:4.4804%;width:66px;">
-			<p class="g-pstyle2">Bolivia</p>
-		</div>
-		<div id="g-ai0-4" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:9.7644%;margin-top:-10.4px;left:10.3494%;width:39px;">
-			<p class="g-pstyle1">20</p>
-		</div>
-		<div id="g-ai0-5" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:9.9784%;margin-top:-9.9px;left:2.5346%;width:86px;">
-			<p class="g-pstyle2">Argentina</p>
-		</div>
-		<div id="g-ai0-6" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:14.044%;margin-top:-10.4px;left:10.3494%;width:39px;">
-			<p class="g-pstyle1">12</p>
-		</div>
-		<div id="g-ai0-7" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:14.4006%;margin-top:-9.9px;left:0.157%;width:111px;">
-			<p class="g-pstyle2">United States</p>
-		</div>
-		<div id="g-ai0-8" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:18.4662%;margin-top:-10.4px;left:10.3494%;width:39px;">
-			<p class="g-pstyle1">11</p>
-		</div>
-		<div id="g-ai0-9" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:18.6802%;margin-top:-9.9px;left:5.5368%;width:55px;">
-			<p class="g-pstyle2">Chile</p>
-		</div>
-		<div id="g-ai0-10" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:22.8885%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">7.9</p>
-		</div>
-		<div id="g-ai0-11" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:23.1025%;margin-top:-9.9px;left:3.062%;width:81px;">
-			<p class="g-pstyle2">Australia</p>
-		</div>
-		<div id="g-ai0-12" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:27.3107%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">6.8</p>
-		</div>
-		<div id="g-ai0-13" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:27.5247%;margin-top:-9.9px;left:5.0706%;width:60px;">
-			<p class="g-pstyle2">China</p>
-		</div>
-		<div id="g-ai0-14" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:31.733%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">3.2</p>
-		</div>
-		<div id="g-ai0-15" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:31.947%;margin-top:-9.9px;left:2.9726%;width:82px;">
-			<p class="g-pstyle2">Germany</p>
-		</div>
-		<div id="g-ai0-16" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:36.1552%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">3.0</p>
-		</div>
-		<div id="g-ai0-17" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:36.3692%;margin-top:-9.9px;left:4.5452%;width:66px;">
-			<p class="g-pstyle2">Congo</p>
-		</div>
-		<div id="g-ai0-18" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:40.4348%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">2.9</p>
-		</div>
-		<div id="g-ai0-19" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:40.7915%;margin-top:-9.9px;left:3.8325%;width:73px;">
-			<p class="g-pstyle2">Canada</p>
-		</div>
-		<div id="g-ai0-20" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:44.9997%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">1.7</p>
-		</div>
-		<div id="g-ai0-21" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:45.0711%;margin-top:-9.9px;left:4.0684%;width:71px;">
-			<p class="g-pstyle2">Mexico</p>
-		</div>
-		<div id="g-ai0-22" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:49.422%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">1.3</p>
-		</div>
-		<div id="g-ai0-23" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:49.4933%;margin-top:-9.9px;left:3.6325%;width:75px;">
-			<p class="g-pstyle2">Czechia</p>
-		</div>
-		<div id="g-ai0-24" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:53.8443%;margin-top:-10.4px;left:10.3494%;width:44px;">
-			<p class="g-pstyle1">1.2</p>
-		</div>
-		<div id="g-ai0-25" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:53.9156%;margin-top:-9.9px;left:4.6825%;width:64px;">
-			<p class="g-pstyle2">Serbia</p>
-		</div>
-		<div id="g-ai0-26" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:58.2665%;margin-top:-10.4px;left:10.3494%;width:43px;">
-			<p class="g-pstyle1">1.0</p>
-		</div>
-		<div id="g-ai0-27" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:58.3378%;margin-top:-9.9px;left:4.429%;width:67px;">
-			<p class="g-pstyle2">Russia</p>
-		</div>
-		<div id="g-ai0-28" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:62.4035%;margin-top:-10.4px;left:14.2624%;width:43px;">
-			<p class="g-pstyle3">0.9</p>
-		</div>
-		<div id="g-ai0-29" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:62.7601%;margin-top:-9.9px;left:5.7769%;width:53px;">
-			<p class="g-pstyle2">Peru</p>
-		</div>
-		<div id="g-ai0-30" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:66.8257%;margin-top:-10.4px;left:14.0916%;width:43px;">
-			<p class="g-pstyle3">0.8</p>
-		</div>
-		<div id="g-ai0-31" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:67.1823%;margin-top:-9.9px;left:5.9903%;width:51px;">
-			<p class="g-pstyle2">Mali</p>
-		</div>
-		<div id="g-ai0-32" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:71.248%;margin-top:-10.4px;left:13.6216%;width:43px;">
-			<p class="g-pstyle3">0.7</p>
-		</div>
-		<div id="g-ai0-33" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:71.4619%;margin-top:-9.9px;left:5.1769%;width:59px;">
-			<p class="g-pstyle2">Brazil</p>
-		</div>
-		<div id="g-ai0-34" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:75.6702%;margin-top:-10.4px;left:13.4508%;width:43px;">
-			<p class="g-pstyle3">0.7</p>
-		</div>
-		<div id="g-ai0-35" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:75.8842%;margin-top:-9.9px;left:2.0057%;width:92px;">
-			<p class="g-pstyle2">Zimbabwe</p>
-		</div>
-		<div id="g-ai0-36" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:80.0925%;margin-top:-10.4px;left:11.8743%;width:43px;">
-			<p class="g-pstyle3">0.3</p>
-		</div>
-		<div id="g-ai0-37" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:80.3065%;margin-top:-9.9px;left:5.1389%;width:59px;">
-			<p class="g-pstyle2">Spain</p>
-		</div>
-		<div id="g-ai0-38" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:84.4434%;margin-top:-9.9px;left:11.6614%;width:43px;">
-			<p class="g-pstyle2">0.3</p>
-		</div>
-		<div id="g-ai0-39" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:84.7287%;margin-top:-9.9px;left:3.2775%;width:79px;">
-			<p class="g-pstyle2">Portugal</p>
-		</div>
-		<div id="g-ai0-40" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:88.8657%;margin-top:-9.9px;left:11.4907%;width:43px;">
-			<p class="g-pstyle2">0.2</p>
-		</div>
-		<div id="g-ai0-41" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:89.151%;margin-top:-9.9px;left:3.3635%;width:78px;">
-			<p class="g-pstyle2">Namibia</p>
-		</div>
-		<div id="g-ai0-42" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:93.2879%;margin-top:-9.9px;left:11.2778%;width:43px;">
-			<p class="g-pstyle2">0.8</p>
-		</div>
-		<div id="g-ai0-43" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:93.4306%;margin-top:-9.9px;left:4.5924%;width:65px;">
-			<p class="g-pstyle2">Ghana</p>
-		</div>
-		<div id="g-ai0-44" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:97.7102%;margin-top:-9.9px;left:11.2694%;width:43px;">
-			<p class="g-pstyle2">0.8</p>
-		</div>
-		<div id="g-ai0-45" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:97.8528%;margin-top:-9.9px;left:4.4811%;width:66px;">
-			<p class="g-pstyle2">Others</p>
-		</div>
-	</div>
-
-</div>
-
-<!-- End ai2html - 2023-04-03 09:03 -->
-</section>
-
-<section class="story-body">
-	<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
-
-	<p class="body-text serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
-</section>
-
-<h2 class="hr-lines" style="margin-top: 60px; margin-bottom: 30px;"> In the Mines </h2>
-
-<section class="chart">
-<!-- Generated by ai2html v0.111.0 - 2023-04-01 18:32 -->
-<!-- ai file: global_production.ai -->
-<style media="screen,print">
-	#g-global_production-box ,
-	#g-global_production-box .g-artboard {
-		margin:0 auto;
+	#g-reserve-large .g-pstyle4 {
+		line-height:19px;
+		height:19px;
 	}
-	#g-global_production-box p {
-		margin:0;
+	#g-reserve-large .g-cstyle0 {
+		font-weight:700;
 	}
-	#g-global_production-box .g-aiAbs {
-		position:absolute;
-	}
-	#g-global_production-box .g-aiImg {
-		position:absolute;
-		top:0;
-		display:block;
-		width:100% !important;
-	}
-	#g-global_production-box .g-aiSymbol {
-		position: absolute;
-		box-sizing: border-box;
-	}
-	#g-global_production-box .g-aiPointText p { white-space: nowrap; }
-	#g-global_production-large {
+	#g-reserve-mobile {
 		position:relative;
 		overflow:hidden;
 	}
-	#g-global_production-large p {
+	#g-reserve-mobile p {
 		font-family:Roboto;
 		font-weight:400;
 		line-height:18px;
@@ -423,210 +259,1447 @@
 		font-style:normal;
 		position:static;
 	}
-	#g-global_production-large .g-pstyle0 {
+	#g-reserve-mobile .g-pstyle0 {
 		font-weight:700;
-		line-height:22px;
-		height:22px;
-		font-size:18px;
+		line-height:15px;
+		height:15px;
 	}
-	#g-global_production-large .g-pstyle1 {
+	#g-reserve-mobile .g-pstyle1 {
+		height:18px;
+	}
+	#g-reserve-mobile .g-pstyle2 {
+		line-height:19px;
+		height:19px;
+		color:rgb(79,79,79);
+	}
+	#g-reserve-mobile .g-pstyle3 {
+		height:18px;
+		text-align:center;
+	}
+	#g-reserve-mobile .g-pstyle4 {
+		line-height:19px;
+		height:19px;
+	}
+	#g-reserve-mobile .g-cstyle0 {
 		font-weight:700;
-		height:18px;
-		color:rgb(218,255,0);
-	}
-	#g-global_production-large .g-pstyle2 {
-		height:18px;
-	}
-	#g-global_production-large .g-pstyle3 {
-		height:18px;
-		color:rgb(216,216,216);
-	}
-	#g-global_production-large .g-pstyle4 {
-		line-height:16px;
-		height:16px;
-		font-size:13px;
-		color:rgb(216,216,216);
-	}
-	#g-global_production-large .g-pstyle5 {
-		line-height:12px;
-		height:12px;
-		font-size:10px;
-		color:rgb(178,178,178);
 	}
 
 </style>
 
-<div id="g-global_production-box" class="ai2html">
+<div id="g-reserve-box" class="ai2html">
 
 	<!-- Artboard: large -->
-	<div id="g-global_production-large" class="g-artboard" style="max-width: 1134px;max-height: 864px" data-aspect-ratio="1.312" data-min-width="0">
-<div style="padding: 0 0 76.1905% 0;"></div>
-		<img id="g-global_production-large-img" class="g-global_production-large-img g-aiImg" alt="" src="global_production-large.png"/>
-		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:1.4049%;margin-top:-12.1px;left:0.3641%;width:277px;">
-			<p class="g-pstyle0">Lithium production per country.</p>
+	<div id="g-reserve-large" class="g-artboard" style="width:1040px; height:701px;" data-aspect-ratio="1.484" data-min-width="1040">
+<div style=""></div>
+		<img id="g-reserve-large-img" class="g-reserve-large-img g-aiImg" alt="" src="reserve-large.png"/>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-reserve-large-interaction-img g-aiImg" version="1.2" baseProfile="tiny" id="g-reserve-large-interaction-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 1040 701" overflow="visible" xml:space="preserve">
+<g>
+	<g id="americas" data-name="americas">
+		<rect x="102.296" y="53.86" fill="#FFC112" width="886.343" height="25.686"/>
+		<rect x="102.296" y="115.505" fill="#FFC112" width="487.495" height="25.686"/>
+		<rect x="102.296" y="300.442" fill="#FFC112" width="75.342" height="25.686"/>
+		<rect x="102.296" y="423.733" fill="#FFC112" width="39.019" height="25.686"/>
+		<rect x="102.296" y="485.378" fill="#FFC112" width="32.355" height="25.686"/>
+		
+			<rect id="bolivia" data-name="bolivia" x="102.296" y="23.037" fill="#FFC112" width="930.645" height="25.686"/>
+		
+			<rect id="bolivia-2" data-name="bolivia" x="1351.415" y="34.037" fill="#FFC112" width="284.585" height="25.686"/>
+		<rect x="1351.415" y="64.86" fill="#FFC112" width="271.038" height="25.686"/>
+		<rect x="1351.415" y="95.682" fill="#FFC112" width="162.62" height="25.686"/>
+		<rect x="1351.415" y="126.505" fill="#FFC112" width="149.073" height="25.686"/>
+		
+			<rect id="bolivia-3" data-name="bolivia" x="102.296" y="84.682" fill="#FFC112" width="531.797" height="25.686"/>
+		<rect x="1351.415" y="311.442" fill="#FFC112" width="23.039" height="25.686"/>
+		<rect x="1351.415" y="434.733" fill="#FFC112" width="11.932" height="25.686"/>
+		<rect x="1351.415" y="496.378" fill="#FFC112" width="9.894" height="25.686"/>
+		<g>
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M688.555,107.489c7.763,7.416,39.387,39.301,40.34,88.038
+				c0.362,18.529-3.816,34.006-8.095,45.054"/>
+			<g>
+				<polygon fill="#FFFFFF" points="716.693,237.313 718.017,247.196 725.915,241.109 				"/>
+			</g>
+		</g>
+		<g>
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M1555.019,112.465c6.866,5.373,34.797,28.756,34.541,72.149
+				c-0.096,16.364-4.173,30.767-8.272,41.307"/>
+			<g>
+				<polygon fill="#FFFFFF" points="1577.157,222.658 1578.515,232.537 1586.392,226.423 				"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1494.4548 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">C</text>
+		<text transform="matrix(1 0 0 1 1504.2175 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">l</text>
+		<text transform="matrix(1 0 0 1 1507.8582 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1516.4128 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1524.1472 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1532.0945 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1535.8074 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1540.5613 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1549.116 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1552.8289 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">7</text>
+		<text transform="matrix(1 0 0 1 1561.2517 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">0</text>
+		<text transform="matrix(1 0 0 1 1569.6746 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1573.3875 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">p</text>
+		<text transform="matrix(1 0 0 1 1581.8035 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1589.7507 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1594.6863 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">c</text>
+		<text transform="matrix(1 0 0 1 1602.5378 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1610.4851 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1618.7615 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1623.6609 251.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1512.4207 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1520.9753 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">f</text>
+		<text transform="matrix(1 0 0 1 1526.1824 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1529.8962 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1534.9714 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1542.9187 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1550.6531 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1558.6003 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1563.8074 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">v</text>
+		<text transform="matrix(1 0 0 1 1571.073 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1579.0203 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1582.7332 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">l</text>
+		<text transform="matrix(1 0 0 1 1586.3738 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1590.0134 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1597.9597 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1605.6941 269.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1507.0457 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1510.6863 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1518.9617 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1522.6755 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1527.575 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">h</text>
+		<text transform="matrix(1 0 0 1 1535.8367 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1543.7839 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1547.4968 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">A</text>
+		<text transform="matrix(1 0 0 1 1557.282 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">m</text>
+		<text transform="matrix(1 0 0 1 1570.4294 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1578.3757 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1583.4519 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1587.0925 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">c</text>
+		<text transform="matrix(1 0 0 1 1594.9441 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">a</text>
+		<text transform="matrix(1 0 0 1 1603.1023 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1610.8367 287.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">.</text>
+	</g>
+	<g id="bolivia-4" data-name="bolivia">
+		
+			<rect id="bolivia1" data-name="bolivia1" x="102.296" y="23.037" fill="#FFC112" width="930.645" height="25.686"/>
+		<g id="arrow1" data-name="arrow1">
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M1024.868,66.628c-3.336,10.205-18.437,52.498-61.984,74.405
+				c-16.555,8.328-32.319,11.244-44.132,12.156"/>
+			<g>
+				<polygon fill="#FFFFFF" points="919.927,148.073 911.584,153.535 920.485,158.03 				"/>
+			</g>
+		</g>
+		
+			<rect id="bolivia-5" data-name="bolivia" x="1351.415" y="34.037" fill="#FFC112" width="284.585" height="25.686"/>
+		<g id="bolivia-arrow" data-name="bolivia-arrow">
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M1640.938,71.054c3.06,8.164,14.71,42.677-8.122,79.578
+				c-8.611,13.916-19.596,24.083-28.587,30.943"/>
+			<g>
+				<polygon fill="#FFFFFF" points="1602.403,176.637 1598.413,185.775 1608.322,184.662 				"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1512.1689 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">B</text>
+		<text transform="matrix(1 0 0 1 1521.5078 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1530.0625 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">l</text>
+		<text transform="matrix(1 0 0 1 1533.7021 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1537.3418 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">v</text>
+		<text transform="matrix(1 0 0 1 1544.6074 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1548.248 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">a</text>
+		<text transform="matrix(1 0 0 1 1556.4072 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1560.1211 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">p</text>
+		<text transform="matrix(1 0 0 1 1568.5361 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1577.0908 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1584.8252 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1592.5596 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1600.5059 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1608.2402 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1616.1875 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1623.9219 213.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1496.0557 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">m</text>
+		<text transform="matrix(1 0 0 1 1509.2031 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1517.7578 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1522.833 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1530.7793 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1534.4932 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1539.3926 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">h</text>
+		<text transform="matrix(1 0 0 1 1547.6543 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">a</text>
+		<text transform="matrix(1 0 0 1 1555.8145 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1564.0898 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1567.8037 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">2</text>
+		<text transform="matrix(1 0 0 1 1576.4102 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">0</text>
+		<text transform="matrix(1 0 0 1 1585.0156 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1588.751 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">p</text>
+		<text transform="matrix(1 0 0 1 1597.1953 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1605.3037 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1610.6357 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">c</text>
+		<text transform="matrix(1 0 0 1 1618.458 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1626.5664 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1634.9668 231.6445)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1640.0352 231.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1499.5938 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1508.1484 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">f</text>
+		<text transform="matrix(1 0 0 1 1513.3555 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1517.0693 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1521.9688 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">h</text>
+		<text transform="matrix(1 0 0 1 1530.2305 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1538.1777 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1541.8906 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">w</text>
+		<text transform="matrix(1 0 0 1 1553.1631 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1561.7178 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1566.793 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">l</text>
+		<text transform="matrix(1 0 0 1 1570.4336 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">d</text>
+		<text transform="matrix(1 0 0 1 1578.8926 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">‚Äö√Ñ√¥</text>
+		<text transform="matrix(1 0 0 1 1581.0684 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1588.8027 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1592.5156 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">k</text>
+		<text transform="matrix(1 0 0 1 1600.1191 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1608.3945 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">o</text>
+		<text transform="matrix(1 0 0 1 1616.9492 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">w</text>
+		<text transform="matrix(1 0 0 1 1628.2217 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">n</text>
+		<text transform="matrix(1 0 0 1 1636.498 249.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1518.7607 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">l</text>
+		<text transform="matrix(1 0 0 1 1522.4004 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1526.041 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">t</text>
+		<text transform="matrix(1 0 0 1 1530.9414 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">h</text>
+		<text transform="matrix(1 0 0 1 1539.2031 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">i</text>
+		<text transform="matrix(1 0 0 1 1542.8428 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">u</text>
+		<text transform="matrix(1 0 0 1 1551.1113 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">m</text>
+		<text transform="matrix(1 0 0 1 1564.2588 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px"> </text>
+		<text transform="matrix(1 0 0 1 1567.9727 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1573.0479 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1580.9941 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">s</text>
+		<text transform="matrix(1 0 0 1 1588.7285 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1596.6758 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">r</text>
+		<text transform="matrix(1 0 0 1 1601.8828 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">v</text>
+		<text transform="matrix(1 0 0 1 1609.1484 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">e</text>
+		<text transform="matrix(1 0 0 1 1617.0957 267.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="15px">.</text>
+	</g>
+</g>
+<style>
+#g-reserve-large-interaction-img rect, #g-reserve-large-interaction-img circle, #g-reserve-large-interaction-img path, #g-reserve-large-interaction-img line, #g-reserve-large-interaction-img polyline, #g-reserve-large-interaction-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai0-1" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:1.6331%;margin-top:-8.4px;left:9.8361%;width:175px;">
+			<p class="g-pstyle0">Lithium Reserve (tons)</p>
 		</div>
-		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:5.3181%;margin-top:-18.9px;left:93.2243%;width:65px;">
-			<p class="g-pstyle1">Global</p>
-			<p class="g-pstyle1">total</p>
+		<div id="g-ai0-2" class="g-labels g-aiAbs g-aiPointText" style="top:5.3421%;margin-top:-10.4px;left:10.3494%;width:52px;">
+			<p class="g-pstyle1">21M</p>
 		</div>
-		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.5079%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">130K</p>
+		<div id="g-ai0-3" class="g-interaction g-aiAbs g-aiPointText" style="top:5.3421%;margin-top:-10.4px;left:10.3494%;width:52px;">
+			<p class="g-pstyle1">21M</p>
 		</div>
-		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:7.8644%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">125K</p>
+		<div id="g-ai0-4" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:5.5561%;margin-top:-9.9px;left:4.4804%;width:66px;">
+			<p class="g-pstyle2">Bolivia</p>
 		</div>
-		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:11.3366%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">120K</p>
+		<div id="g-ai0-5" class="g-interaction g-aiAbs g-aiPointText" style="top:9.7644%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">20</p>
 		</div>
-		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:14.6931%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">115K</p>
+		<div id="g-ai0-6" class="g-labels g-aiAbs g-aiPointText" style="top:9.7644%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">20</p>
 		</div>
-		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:18.1653%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">110K</p>
+		<div id="g-ai0-7" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:9.9784%;margin-top:-9.9px;left:2.5346%;width:86px;">
+			<p class="g-pstyle2">Argentina</p>
 		</div>
-		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:21.5218%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">105K</p>
+		<div id="g-ai0-8" class="g-labels g-aiAbs g-aiPointText" style="top:14.044%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">12</p>
 		</div>
-		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:24.8783%;margin-top:-9.9px;left:0.2759%;width:57px;">
-			<p class="g-pstyle2">100K</p>
+		<div id="g-ai0-9" class="g-interaction g-aiAbs g-aiPointText" style="top:14.044%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">12</p>
 		</div>
-		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:28.3505%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">95K</p>
+		<div id="g-ai0-10" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:14.4006%;margin-top:-9.9px;left:0.157%;width:111px;">
+			<p class="g-pstyle2">United States</p>
 		</div>
-		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:31.707%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">90K</p>
+		<div id="g-ai0-11" class="g-interaction g-aiAbs g-aiPointText" style="top:18.4662%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">11</p>
 		</div>
-		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.1793%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">85K</p>
+		<div id="g-ai0-12" class="g-labels g-aiAbs g-aiPointText" style="top:18.4662%;margin-top:-10.4px;left:10.3494%;width:39px;">
+			<p class="g-pstyle1">11</p>
 		</div>
-		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:38.5357%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">80K</p>
+		<div id="g-ai0-13" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:18.6802%;margin-top:-9.9px;left:5.5368%;width:55px;">
+			<p class="g-pstyle2">Chile</p>
 		</div>
-		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.008%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">75K</p>
+		<div id="bolivia-text" class="g-interaction g-aiAbs g-aiPointText" style="top:22.2309%;margin-top:-29.8px;left:77.0014%;margin-left:-117px;width:234px;">
+			<p class="g-pstyle3">Bolivia posseses more than </p>
+			<p class="g-pstyle3"><span class="g-cstyle0">20 percent</span> of the world&rsquo;s </p>
+			<p class="g-pstyle3">known lithium reserve.</p>
 		</div>
-		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.3644%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">70K</p>
+		<div id="g-ai0-15" class="g-labels g-aiAbs g-aiPointText" style="top:22.8885%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">7.9</p>
 		</div>
-		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.8366%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">65K</p>
+		<div id="g-ai0-16" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:23.1025%;margin-top:-9.9px;left:3.062%;width:81px;">
+			<p class="g-pstyle2">Australia</p>
 		</div>
-		<div id="g-ai0-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.7301%;margin-top:-9.9px;left:93.2243%;width:81px;">
-			<p class="g-pstyle3">Australia</p>
+		<div id="g-ai0-17" class="g-labels g-aiAbs g-aiPointText" style="top:27.3107%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">6.8</p>
 		</div>
-		<div id="g-ai0-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:52.1931%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">60K</p>
+		<div id="g-ai0-18" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:27.5247%;margin-top:-9.9px;left:5.0706%;width:60px;">
+			<p class="g-pstyle2">China</p>
 		</div>
-		<div id="g-ai0-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:55.6653%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">55K</p>
+		<div id="g-ai0-19" class="g-labels g-aiAbs g-aiPointText" style="top:31.733%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">3.2</p>
 		</div>
-		<div id="g-ai0-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.0218%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">50K</p>
+		<div id="g-ai0-20" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:31.947%;margin-top:-9.9px;left:2.9726%;width:82px;">
+			<p class="g-pstyle2">Germany</p>
 		</div>
-		<div id="g-ai0-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.494%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">45K</p>
+		<div id="g-ai0-21" class="g-labels g-aiAbs g-aiPointText" style="top:36.1552%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">3.0</p>
 		</div>
-		<div id="g-ai0-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.8505%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">40K</p>
+		<div id="g-ai0-22" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:36.3692%;margin-top:-9.9px;left:4.5452%;width:66px;">
+			<p class="g-pstyle2">Congo</p>
 		</div>
-		<div id="g-ai0-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.7764%;margin-top:-9.9px;left:93.2243%;width:55px;">
-			<p class="g-pstyle3">Chile</p>
+		<div id="g-ai0-23" class="g-interaction g-aiAbs g-aiPointText" style="top:39.4019%;margin-top:-20.2px;left:64.9813%;margin-left:-117px;width:234px;">
+			<p class="g-pstyle3">Close to 70 percent of</p>
+			<p class="g-pstyle3">reserve lies in the Americas.</p>
 		</div>
-		<div id="g-ai0-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.3227%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">35K</p>
+		<div id="g-ai0-24" class="g-labels g-aiAbs g-aiPointText" style="top:40.4348%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">2.9</p>
 		</div>
-		<div id="g-ai0-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:72.6792%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">30K</p>
+		<div id="g-ai0-25" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:40.7915%;margin-top:-9.9px;left:3.8325%;width:73px;">
+			<p class="g-pstyle2">Canada</p>
 		</div>
-		<div id="g-ai0-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.0357%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">25K</p>
+		<div id="g-ai0-26" class="g-interaction g-aiAbs g-aiPointText" style="top:44.9997%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">1.7</p>
 		</div>
-		<div id="g-ai0-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.5079%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">20K</p>
+		<div id="g-ai0-27" class="g-labels g-aiAbs g-aiPointText" style="top:44.9997%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">1.7</p>
 		</div>
-		<div id="g-ai0-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:80.3181%;margin-top:-9.9px;left:93.2243%;width:60px;">
-			<p class="g-pstyle3">China</p>
+		<div id="g-ai0-28" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:45.0711%;margin-top:-9.9px;left:4.0684%;width:71px;">
+			<p class="g-pstyle2">Mexico</p>
 		</div>
-		<div id="g-ai0-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.8644%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">15K</p>
+		<div id="g-ai0-29" class="g-labels g-aiAbs g-aiPointText" style="top:49.422%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">1.3</p>
 		</div>
-		<div id="g-ai0-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.0072%;margin-top:-8.8px;left:92.9598%;width:78px;">
-			<p class="g-pstyle4">Argentina</p>
+		<div id="g-ai0-30" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:49.4933%;margin-top:-9.9px;left:3.6325%;width:75px;">
+			<p class="g-pstyle2">Czechia</p>
 		</div>
-		<div id="g-ai0-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.6275%;margin-top:-8.8px;left:93.048%;width:54px;">
-			<p class="g-pstyle4">Brazil</p>
+		<div id="g-ai0-31" class="g-labels g-aiAbs g-aiPointText" style="top:53.8443%;margin-top:-10.4px;left:10.3494%;width:44px;">
+			<p class="g-pstyle1">1.2</p>
 		</div>
-		<div id="g-ai0-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:86.3366%;margin-top:-9.9px;left:0.7245%;width:48px;">
-			<p class="g-pstyle2">10K</p>
+		<div id="g-ai0-32" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:53.9156%;margin-top:-9.9px;left:4.6825%;width:64px;">
+			<p class="g-pstyle2">Serbia</p>
 		</div>
-		<div id="g-ai0-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:87.1321%;margin-top:-8.8px;left:93.048%;width:83px;">
-			<p class="g-pstyle4">Zimbabwe</p>
+		<div id="g-ai0-33" class="g-labels g-aiAbs g-aiPointText" style="top:58.2665%;margin-top:-10.4px;left:10.3494%;width:43px;">
+			<p class="g-pstyle1">1.0</p>
 		</div>
-		<div id="g-ai0-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.7525%;margin-top:-8.8px;left:92.6952%;width:103px;">
-			<p class="g-pstyle4"> United States</p>
+		<div id="g-ai0-34" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:58.3378%;margin-top:-9.9px;left:4.429%;width:67px;">
+			<p class="g-pstyle2">Russia</p>
 		</div>
-		<div id="g-ai0-35" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:89.6931%;margin-top:-9.9px;left:1.1731%;width:40px;">
-			<p class="g-pstyle2">5K</p>
+		<div id="g-ai0-35" class="g-labels g-aiAbs g-aiPointText" style="top:62.4035%;margin-top:-10.4px;left:14.2624%;width:43px;">
+			<p class="g-pstyle4">0.9</p>
 		</div>
-		<div id="g-ai0-36" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.3729%;margin-top:-8.8px;left:93.048%;width:71px;">
-			<p class="g-pstyle4">Portugal</p>
+		<div id="g-ai0-36" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:62.7601%;margin-top:-9.9px;left:5.7769%;width:53px;">
+			<p class="g-pstyle2">Peru</p>
 		</div>
-		<div id="g-ai0-37" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:91.9933%;margin-top:-8.8px;left:93.048%;width:60px;">
-			<p class="g-pstyle4">Others</p>
+		<div id="g-ai0-37" class="g-labels g-aiAbs g-aiPointText" style="top:66.8257%;margin-top:-10.4px;left:14.0916%;width:43px;">
+			<p class="g-pstyle4">0.8</p>
 		</div>
-		<div id="g-ai0-38" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.1653%;margin-top:-9.9px;left:1.6738%;width:30px;">
-			<p class="g-pstyle2">0</p>
+		<div id="g-ai0-38" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:67.1823%;margin-top:-9.9px;left:5.9903%;width:51px;">
+			<p class="g-pstyle2">Mali</p>
 		</div>
-		<div id="g-ai0-39" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:3.9776%;width:56px;">
-			<p class="g-pstyle2">2011</p>
+		<div id="g-ai0-39" class="g-labels g-aiAbs g-aiPointText" style="top:71.248%;margin-top:-10.4px;left:13.6216%;width:43px;">
+			<p class="g-pstyle4">0.7</p>
 		</div>
-		<div id="g-ai0-40" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:11.8639%;width:56px;">
-			<p class="g-pstyle2">2012</p>
+		<div id="g-ai0-40" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:71.4619%;margin-top:-9.9px;left:5.1769%;width:59px;">
+			<p class="g-pstyle2">Brazil</p>
 		</div>
-		<div id="g-ai0-41" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:19.7717%;width:56px;">
-			<p class="g-pstyle2">2013</p>
+		<div id="g-ai0-41" class="g-labels g-aiAbs g-aiPointText" style="top:75.6702%;margin-top:-10.4px;left:13.4508%;width:43px;">
+			<p class="g-pstyle4">0.7</p>
 		</div>
-		<div id="g-ai0-42" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:27.6578%;width:56px;">
-			<p class="g-pstyle2">2014</p>
+		<div id="g-ai0-42" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:75.8842%;margin-top:-9.9px;left:2.0057%;width:92px;">
+			<p class="g-pstyle2">Zimbabwe</p>
 		</div>
-		<div id="g-ai0-43" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:35.544%;width:56px;">
-			<p class="g-pstyle2">2015</p>
+		<div id="g-ai0-43" class="g-labels g-aiAbs g-aiPointText" style="top:80.0925%;margin-top:-10.4px;left:11.8743%;width:43px;">
+			<p class="g-pstyle4">0.3</p>
 		</div>
-		<div id="g-ai0-44" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:43.4302%;width:56px;">
-			<p class="g-pstyle2">2016</p>
+		<div id="g-ai0-44" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:80.3065%;margin-top:-9.9px;left:5.1389%;width:59px;">
+			<p class="g-pstyle2">Spain</p>
 		</div>
-		<div id="g-ai0-45" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:51.3381%;width:56px;">
-			<p class="g-pstyle2">2017</p>
+		<div id="g-ai0-45" class="g-labels g-aiAbs g-aiPointText" style="top:84.4434%;margin-top:-9.9px;left:11.6614%;width:43px;">
+			<p class="g-pstyle2">0.3</p>
 		</div>
-		<div id="g-ai0-46" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:59.2242%;width:56px;">
-			<p class="g-pstyle2">2018</p>
+		<div id="g-ai0-46" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:84.7287%;margin-top:-9.9px;left:3.2775%;width:79px;">
+			<p class="g-pstyle2">Portugal</p>
 		</div>
-		<div id="g-ai0-47" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:67.1104%;width:56px;">
-			<p class="g-pstyle2">2019</p>
+		<div id="g-ai0-47" class="g-labels g-aiAbs g-aiPointText" style="top:88.8657%;margin-top:-9.9px;left:11.4907%;width:43px;">
+			<p class="g-pstyle2">0.2</p>
 		</div>
-		<div id="g-ai0-48" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:74.9966%;width:56px;">
-			<p class="g-pstyle2">2020</p>
+		<div id="g-ai0-48" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:89.151%;margin-top:-9.9px;left:3.3635%;width:78px;">
+			<p class="g-pstyle2">Namibia</p>
 		</div>
-		<div id="g-ai0-49" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:82.9045%;width:56px;">
-			<p class="g-pstyle2">2021</p>
+		<div id="g-ai0-49" class="g-labels g-aiAbs g-aiPointText" style="top:93.2879%;margin-top:-9.9px;left:11.2778%;width:43px;">
+			<p class="g-pstyle2">0.8</p>
 		</div>
-		<div id="g-ai0-50" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2486%;margin-top:-9.9px;left:90.7907%;width:56px;">
-			<p class="g-pstyle2">2022</p>
+		<div id="g-ai0-50" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:93.4306%;margin-top:-9.9px;left:4.5924%;width:65px;">
+			<p class="g-pstyle2">Ghana</p>
 		</div>
-		<div id="g-ai0-51" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:99.0351%;margin-top:-6.7px;left:0.2739%;width:249px;">
-			<p class="g-pstyle5">Source: bp Statistical Review of World Energy 2022</p>
+		<div id="g-ai0-51" class="g-labels g-aiAbs g-aiPointText" style="top:97.7102%;margin-top:-9.9px;left:11.2694%;width:43px;">
+			<p class="g-pstyle2">0.8</p>
+		</div>
+		<div id="g-ai0-52" class="g-Layer_3 g-aiAbs g-aiPointText" style="top:97.8528%;margin-top:-9.9px;left:4.4811%;width:66px;">
+			<p class="g-pstyle2">Others</p>
 		</div>
 	</div>
 
+	<!-- Artboard: mobile -->
+	<div id="g-reserve-mobile" class="g-artboard" style="max-width: 390px;max-height: 703px" data-aspect-ratio="0.555" data-min-width="0" data-max-width="1039">
+<div style="padding: 0 0 180.2564% 0;"></div>
+		<img id="g-reserve-mobile-img" class="g-reserve-mobile-img g-aiImg" alt="" src="reserve-mobile.png"/>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-reserve-mobile-interaction-img g-aiImg" version="1.2" baseProfile="tiny" id="g-reserve-mobile-interaction-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 390 703" overflow="visible" xml:space="preserve">
+<g>
+	<g id="americas-2" data-name="americas">
+		<rect x="-1164.204" y="42.86" fill="#FFC112" width="886.343" height="25.686"/>
+		<rect x="-1164.204" y="104.505" fill="#FFC112" width="487.495" height="25.686"/>
+		<rect x="-1164.204" y="289.442" fill="#FFC112" width="75.342" height="25.686"/>
+		<rect x="-1164.204" y="412.733" fill="#FFC112" width="39.019" height="25.686"/>
+		<rect x="-1164.204" y="474.378" fill="#FFC112" width="32.355" height="25.686"/>
+		<text transform="matrix(1 0 0 1 -1158.8662 30.5859)" fill="#4F4F4F" font-family="'Roboto-Regular'" font-size="15px">21M</text>
+		<text transform="matrix(1 0 0 1 -1158.8662 61.4082)" fill="#4F4F4F" font-family="'Roboto-Regular'" font-size="15px">20</text>
+		<text transform="matrix(1 0 0 1 -1158.8662 92.2305)" fill="#4F4F4F" font-family="'Roboto-Regular'" font-size="15px">12</text>
+		<text transform="matrix(1 0 0 1 -1158.8662 123.0547)" fill="#4F4F4F" font-family="'Roboto-Regular'" font-size="15px">11</text>
+		
+			<rect id="bolivia-6" data-name="bolivia" x="-1164.204" y="12.037" fill="#FFC112" width="930.645" height="25.686"/>
+		
+			<rect id="bolivia-7" data-name="bolivia" x="84.915" y="23.037" fill="#FFC112" width="284.585" height="25.686"/>
+		<text transform="matrix(1 0 0 1 -1158.8662 309.2754)" fill="#4F4F4F" font-family="'Roboto-Regular'" font-size="15px">1.7</text>
+		<rect x="84.915" y="53.86" fill="#FFC112" width="271.038" height="25.686"/>
+		<rect x="84.915" y="84.682" fill="#FFC112" width="162.62" height="25.686"/>
+		<rect x="84.915" y="115.505" fill="#FFC112" width="149.073" height="25.686"/>
+		
+			<rect id="bolivia-8" data-name="bolivia" x="-1164.204" y="73.682" fill="#FFC112" width="531.797" height="25.686"/>
+		<rect x="84.915" y="300.442" fill="#FFC112" width="23.039" height="25.686"/>
+		<rect x="84.915" y="423.733" fill="#FFC112" width="11.932" height="25.686"/>
+		<rect x="84.915" y="485.378" fill="#FFC112" width="9.894" height="25.686"/>
+		<g>
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M-577.945,96.489c7.763,7.416,39.387,39.301,40.34,88.038
+				c0.362,18.529-3.816,34.006-8.095,45.054"/>
+			<g>
+				<polygon fill="#FFFFFF" points="-549.807,226.313 -548.483,236.196 -540.585,230.109 				"/>
+			</g>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 -673.7053 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">C</text>
+			<text transform="matrix(1 0 0 1 -662.6399 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -658.5149 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -648.8196 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -640.054 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -631.0481 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -626.8391 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -621.4524 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -611.7571 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -607.5481 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">7</text>
+			<text transform="matrix(1 0 0 1 -598.0022 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">0</text>
+			<text transform="matrix(1 0 0 1 -588.4563 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -584.2473 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -574.7102 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -565.7043 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -560.1086 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -551.2102 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -542.2043 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -532.8245 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -527.2708 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -523.0627 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -513.3674 260.5908)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">f</text>
+			<text transform="matrix(1 0 0 1 -696.6946 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -690.9426 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -681.9358 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -673.1702 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -664.1633 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -658.262 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -650.0276 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -641.0208 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -636.8127 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -632.6868 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -628.5618 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -619.5559 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -610.7903 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -606.5813 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -602.4563 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -593.0754 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -588.8674 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -583.3137 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -573.9504 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -564.9446 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -560.7356 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">A</text>
+			<text transform="matrix(1 0 0 1 -549.6458 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -534.7463 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -525.7395 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -519.9875 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -515.8625 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -506.9641 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -497.7161 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -488.9504 279.8555)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">.</text>
+			<text transform="matrix(1 0 0 1 -673.7053 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">C</text>
+			<text transform="matrix(1 0 0 1 -662.6399 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -658.5149 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -648.8196 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -640.054 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -631.0481 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -626.8391 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -621.4524 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -611.7571 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -607.5481 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">7</text>
+			<text transform="matrix(1 0 0 1 -598.0022 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">0</text>
+			<text transform="matrix(1 0 0 1 -588.4563 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -584.2473 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -574.7102 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -565.7043 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -560.1086 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -551.2102 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -542.2043 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -532.8245 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -527.2708 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -523.0627 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -513.3674 260.5908)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">f</text>
+			<text transform="matrix(1 0 0 1 -696.6946 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -690.9426 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -681.9358 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -673.1702 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -664.1633 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -658.262 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -650.0276 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -641.0208 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -636.8127 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -632.6868 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -628.5618 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -619.5559 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -610.7903 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -606.5813 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -602.4563 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -593.0754 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -588.8674 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -583.3137 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -573.9504 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -564.9446 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -560.7356 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">A</text>
+			<text transform="matrix(1 0 0 1 -549.6458 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -534.7463 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -525.7395 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -519.9875 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -515.8625 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -506.9641 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -497.7161 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -488.9504 279.8555)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">.</text>
+		</g>
+		<g>
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M288.519,101.465c6.866,5.373,34.797,28.756,34.541,72.149
+				c-0.096,16.364-4.173,30.767-8.272,41.307"/>
+			<g>
+				<polygon fill="#FFFFFF" points="310.657,211.658 312.015,221.537 319.892,215.423 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="bolivia-9" data-name="bolivia">
+		
+			<rect id="bolivia1-2" data-name="bolivia1" x="-1164.204" y="12.037" fill="#FFC112" width="930.645" height="25.686"/>
+		<g id="arrow1-2" data-name="arrow1">
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M-241.632,55.628c-3.336,10.205-18.437,52.498-61.984,74.405
+				c-16.555,8.328-32.319,11.244-44.132,12.156"/>
+			<g>
+				<polygon fill="#FFFFFF" points="-346.573,137.073 -354.916,142.535 -346.015,147.03 				"/>
+			</g>
+		</g>
+		
+			<rect id="bolivia-10" data-name="bolivia" x="84.915" y="23.037" fill="#FFC112" width="284.585" height="25.686"/>
+		<g id="bolivia-text" data-name="bolivia-text">
+			<text transform="matrix(1 0 0 1 -571.6855 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">B</text>
+			<text transform="matrix(1 0 0 1 -561.1016 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -551.4062 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -547.2812 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -543.1562 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -534.9219 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -530.7959 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -521.5488 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -517.3398 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -507.8027 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -498.1074 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -489.3418 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -480.5762 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -471.5703 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -462.8047 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -453.7979 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -445.0322 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -440.8242 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -425.9238 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -416.2285 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -410.4766 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -401.4697 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -397.2617 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -391.708 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -382.3447 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -373.0977 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -363.7178 130.6445)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -561.2891 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">2</text>
+			<text transform="matrix(1 0 0 1 -551.5352 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">0</text>
+			<text transform="matrix(1 0 0 1 -541.7822 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -537.5488 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -527.9785 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -518.7891 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -512.7461 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -503.8809 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -494.6914 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -485.1709 149.9092)" fill="#FFC112" font-family="'Roboto-Bold'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -479.4268 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -475.2188 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -465.5234 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">f</text>
+			<text transform="matrix(1 0 0 1 -459.6211 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -455.4121 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -449.8594 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -440.4961 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -431.4902 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -427.2812 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">w</text>
+			<text transform="matrix(1 0 0 1 -414.5059 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -404.8105 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -399.0586 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -394.9336 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">d</text>
+			<text transform="matrix(1 0 0 1 -385.3457 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">‚Äö√Ñ√¥</text>
+			<text transform="matrix(1 0 0 1 -382.8809 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -374.1152 149.9092)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -550.585 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">k</text>
+			<text transform="matrix(1 0 0 1 -541.9688 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -532.5889 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -522.8936 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">w</text>
+			<text transform="matrix(1 0 0 1 -510.1191 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -500.7383 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -496.5303 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -492.4043 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -488.2793 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -482.7266 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -473.3633 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -469.2373 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">u</text>
+			<text transform="matrix(1 0 0 1 -459.8652 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -444.9658 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -440.7578 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -435.0049 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -425.998 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -417.2324 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -408.2266 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -402.3242 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -394.0898 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -385.084 169.1729)" fill="#FFC112" font-family="'Roboto-Regular'" font-size="17px">.</text>
+			<text transform="matrix(1 0 0 1 -571.6855 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">B</text>
+			<text transform="matrix(1 0 0 1 -561.1016 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -551.4062 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -547.2812 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -543.1562 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -534.9219 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -530.7959 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -521.5488 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -517.3398 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -507.8027 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -498.1074 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -489.3418 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -480.5762 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -471.5703 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -462.8047 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -453.7979 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -445.0322 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -440.8242 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -425.9238 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -416.2285 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -410.4766 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -401.4697 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -397.2617 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -391.708 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -382.3447 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">a</text>
+			<text transform="matrix(1 0 0 1 -373.0977 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -363.7178 130.6445)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -561.2891 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">2</text>
+			<text transform="matrix(1 0 0 1 -551.5352 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">0</text>
+			<text transform="matrix(1 0 0 1 -541.7822 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -537.5488 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">p</text>
+			<text transform="matrix(1 0 0 1 -527.9785 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -518.7891 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -512.7461 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">c</text>
+			<text transform="matrix(1 0 0 1 -503.8809 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -494.6914 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -485.1709 149.9092)" fill="#FFFFFF" font-family="'Roboto-Bold'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -479.4268 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -475.2188 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -465.5234 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">f</text>
+			<text transform="matrix(1 0 0 1 -459.6211 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -455.4121 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -449.8594 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -440.4961 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -431.4902 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -427.2812 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">w</text>
+			<text transform="matrix(1 0 0 1 -414.5059 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -404.8105 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -399.0586 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -394.9336 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">d</text>
+			<text transform="matrix(1 0 0 1 -385.3457 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">‚Äö√Ñ√¥</text>
+			<text transform="matrix(1 0 0 1 -382.8809 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -374.1152 149.9092)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -550.585 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">k</text>
+			<text transform="matrix(1 0 0 1 -541.9688 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -532.5889 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">o</text>
+			<text transform="matrix(1 0 0 1 -522.8936 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">w</text>
+			<text transform="matrix(1 0 0 1 -510.1191 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">n</text>
+			<text transform="matrix(1 0 0 1 -500.7383 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -496.5303 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">l</text>
+			<text transform="matrix(1 0 0 1 -492.4043 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -488.2793 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">t</text>
+			<text transform="matrix(1 0 0 1 -482.7266 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">h</text>
+			<text transform="matrix(1 0 0 1 -473.3633 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">i</text>
+			<text transform="matrix(1 0 0 1 -469.2373 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">u</text>
+			<text transform="matrix(1 0 0 1 -459.8652 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">m</text>
+			<text transform="matrix(1 0 0 1 -444.9658 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px"> </text>
+			<text transform="matrix(1 0 0 1 -440.7578 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -435.0049 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -425.998 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">s</text>
+			<text transform="matrix(1 0 0 1 -417.2324 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -408.2266 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">r</text>
+			<text transform="matrix(1 0 0 1 -402.3242 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">v</text>
+			<text transform="matrix(1 0 0 1 -394.0898 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">e</text>
+			<text transform="matrix(1 0 0 1 -385.084 169.1729)" fill="#FFFFFF" font-family="'Roboto-Regular'" font-size="17px">.</text>
+		</g>
+		<g id="bolivia-arrow-2" data-name="bolivia-arrow">
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M374.438,60.054c3.06,8.164,14.71,42.677-8.122,79.578
+				c-8.611,13.916-19.596,24.083-28.587,30.943"/>
+			<g>
+				<polygon fill="#FFFFFF" points="335.903,165.637 331.913,174.775 341.822,173.662 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<style>
+#g-reserve-mobile-interaction-img rect, #g-reserve-mobile-interaction-img circle, #g-reserve-mobile-interaction-img path, #g-reserve-mobile-interaction-img line, #g-reserve-mobile-interaction-img polyline, #g-reserve-mobile-interaction-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai1-1" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:1.6285%;margin-top:-8.4px;left:21.7731%;width:175px;">
+			<p class="g-pstyle0">Lithium Reserve (tons)</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:5.2558%;margin-top:-9.9px;left:7.9733%;width:66px;">
+			<p class="g-pstyle1">Bolivia</p>
+		</div>
+		<div id="g-ai1-3" class="g-labels g-aiAbs g-aiPointText" style="top:5.3269%;margin-top:-10.4px;left:22.1918%;width:52px;">
+			<p class="g-pstyle2">21M</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:9.6655%;margin-top:-9.9px;left:2.7842%;width:86px;">
+			<p class="g-pstyle1">Argentina</p>
+		</div>
+		<div id="g-ai1-5" class="g-labels g-aiAbs g-aiPointText" style="top:9.7366%;margin-top:-10.4px;left:22.1918%;width:39px;">
+			<p class="g-pstyle2">20</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:14.0751%;margin-top:-9.9px;left:12.0318%;width:50px;">
+			<p class="g-pstyle1">USA</p>
+		</div>
+		<div id="g-ai1-7" class="g-labels g-aiAbs g-aiPointText" style="top:14.004%;margin-top:-10.4px;left:22.1918%;width:39px;">
+			<p class="g-pstyle2">12</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:18.3426%;margin-top:-9.9px;left:10.7903%;width:55px;">
+			<p class="g-pstyle1">Chile</p>
+		</div>
+		<div id="g-ai1-9" class="g-labels g-aiAbs g-aiPointText" style="top:18.4137%;margin-top:-10.4px;left:22.1918%;width:39px;">
+			<p class="g-pstyle2">11</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:22.7522%;margin-top:-9.9px;left:4.191%;width:81px;">
+			<p class="g-pstyle1">Australia</p>
+		</div>
+		<div id="g-ai1-11" class="g-labels g-aiAbs g-aiPointText" style="top:22.8234%;margin-top:-10.4px;left:22.1918%;width:43px;">
+			<p class="g-pstyle2">7.9</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:27.1619%;margin-top:-9.9px;left:9.547%;width:60px;">
+			<p class="g-pstyle1">China</p>
+		</div>
+		<div id="g-ai1-13" class="g-labels g-aiAbs g-aiPointText" style="top:27.233%;margin-top:-10.4px;left:22.1918%;width:43px;">
+			<p class="g-pstyle2">6.8</p>
+		</div>
+		<div id="bolivia-text" class="g-interaction g-aiAbs g-aiPointText" style="top:31.9983%;margin-top:-36.9px;left:77.8348%;margin-left:-85px;width:170px;">
+			<p class="g-pstyle3">Bolivia posseses </p>
+			<p class="g-pstyle3">more than <span class="g-cstyle0">20 percent</span> </p>
+			<p class="g-pstyle3">of the world&rsquo;s known </p>
+			<p class="g-pstyle3">lithium reserve.</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:31.5716%;margin-top:-9.9px;left:3.9526%;width:82px;">
+			<p class="g-pstyle1">Germany</p>
+		</div>
+		<div id="g-ai1-16" class="g-labels g-aiAbs g-aiPointText" style="top:31.6427%;margin-top:-10.4px;left:22.1918%;width:43px;">
+			<p class="g-pstyle2">3.2</p>
+		</div>
+		<div id="g-ai1-17" class="g-interaction g-aiAbs g-aiPointText" style="top:36.1235%;margin-top:-27.9px;left:75.5013%;margin-left:-77.5px;width:155px;">
+			<p class="g-pstyle3">Close to 70 percent </p>
+			<p class="g-pstyle3">of reserve lies </p>
+			<p class="g-pstyle3">in the Americas.</p>
+		</div>
+		<div id="g-ai1-18" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:35.9813%;margin-top:-9.9px;left:8.146%;width:66px;">
+			<p class="g-pstyle1">Congo</p>
+		</div>
+		<div id="g-ai1-19" class="g-labels g-aiAbs g-aiPointText" style="top:36.0524%;margin-top:-10.4px;left:22.1918%;width:43px;">
+			<p class="g-pstyle2">3.0</p>
+		</div>
+		<div id="g-ai1-20" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:40.3909%;margin-top:-9.9px;left:6.2455%;width:73px;">
+			<p class="g-pstyle1">Canada</p>
+		</div>
+		<div id="g-ai1-21" class="g-labels g-aiAbs g-aiPointText" style="top:40.3198%;margin-top:-10.4px;left:22.1918%;width:43px;">
+			<p class="g-pstyle2">2.9</p>
+		</div>
+		<div id="g-ai1-22" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:44.6584%;margin-top:-9.9px;left:6.8747%;width:71px;">
+			<p class="g-pstyle1">Mexico</p>
+		</div>
+		<div id="g-ai1-23" class="g-labels g-aiAbs g-aiPointText" style="top:44.8717%;margin-top:-10.4px;left:28.3456%;width:43px;">
+			<p class="g-pstyle4">1.7</p>
+		</div>
+		<div id="g-ai1-24" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:49.068%;margin-top:-9.9px;left:5.7121%;width:75px;">
+			<p class="g-pstyle1">Czechia</p>
+		</div>
+		<div id="g-ai1-25" class="g-labels g-aiAbs g-aiPointText" style="top:49.2814%;margin-top:-10.4px;left:26.8071%;width:43px;">
+			<p class="g-pstyle4">1.3</p>
+		</div>
+		<div id="g-ai1-26" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:53.4777%;margin-top:-9.9px;left:8.5121%;width:64px;">
+			<p class="g-pstyle1">Serbia</p>
+		</div>
+		<div id="g-ai1-27" class="g-labels g-aiAbs g-aiPointText" style="top:53.6911%;margin-top:-10.4px;left:26.5507%;width:44px;">
+			<p class="g-pstyle4">1.2</p>
+		</div>
+		<div id="g-ai1-28" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:57.8874%;margin-top:-9.9px;left:7.8363%;width:67px;">
+			<p class="g-pstyle1">Russia</p>
+		</div>
+		<div id="g-ai1-29" class="g-labels g-aiAbs g-aiPointText" style="top:58.1007%;margin-top:-10.4px;left:25.7815%;width:43px;">
+			<p class="g-pstyle4">1.0</p>
+		</div>
+		<div id="g-ai1-30" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:62.297%;margin-top:-9.9px;left:11.4308%;width:53px;">
+			<p class="g-pstyle1">Peru</p>
+		</div>
+		<div id="g-ai1-31" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:62.2259%;margin-top:-10.4px;left:25.3824%;width:43px;">
+			<p class="g-pstyle4">0.9</p>
+		</div>
+		<div id="g-ai1-32" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:66.7067%;margin-top:-9.9px;left:11.9997%;width:51px;">
+			<p class="g-pstyle1">Mali</p>
+		</div>
+		<div id="g-ai1-33" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:66.6356%;margin-top:-10.4px;left:25.2431%;width:43px;">
+			<p class="g-pstyle4">0.8</p>
+		</div>
+		<div id="g-ai1-34" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:70.9741%;margin-top:-9.9px;left:9.8307%;width:59px;">
+			<p class="g-pstyle1">Brazil</p>
+		</div>
+		<div id="g-ai1-35" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:71.0453%;margin-top:-10.4px;left:24.8598%;width:43px;">
+			<p class="g-pstyle4">0.7</p>
+		</div>
+		<div id="g-ai1-36" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:75.3838%;margin-top:-9.9px;left:1.3739%;width:92px;">
+			<p class="g-pstyle1">Zimbabwe</p>
+		</div>
+		<div id="g-ai1-37" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:75.4549%;margin-top:-10.4px;left:24.7206%;width:43px;">
+			<p class="g-pstyle4">0.7</p>
+		</div>
+		<div id="g-ai1-38" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:79.7935%;margin-top:-9.9px;left:9.7291%;width:59px;">
+			<p class="g-pstyle1">Spain</p>
+		</div>
+		<div id="g-ai1-39" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:79.8646%;margin-top:-10.4px;left:23.435%;width:43px;">
+			<p class="g-pstyle4">0.3</p>
+		</div>
+		<div id="g-ai1-40" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:84.2032%;margin-top:-9.9px;left:4.7656%;width:79px;">
+			<p class="g-pstyle1">Portugal</p>
+		</div>
+		<div id="g-ai1-41" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:84.2032%;margin-top:-9.9px;left:23.2615%;width:43px;">
+			<p class="g-pstyle1">0.3</p>
+		</div>
+		<div id="g-ai1-42" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:88.6128%;margin-top:-9.9px;left:4.9947%;width:78px;">
+			<p class="g-pstyle1">Namibia</p>
+		</div>
+		<div id="g-ai1-43" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:88.6128%;margin-top:-9.9px;left:23.1222%;width:43px;">
+			<p class="g-pstyle1">0.2</p>
+		</div>
+		<div id="g-ai1-44" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:92.8803%;margin-top:-9.9px;left:8.272%;width:65px;">
+			<p class="g-pstyle1">Ghana</p>
+		</div>
+		<div id="g-ai1-45" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:93.0225%;margin-top:-9.9px;left:22.9487%;width:43px;">
+			<p class="g-pstyle1">0.8</p>
+		</div>
+		<div id="g-ai1-46" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:97.2899%;margin-top:-9.9px;left:7.9753%;width:66px;">
+			<p class="g-pstyle1">Others</p>
+		</div>
+		<div id="g-ai1-47" class="g-Layer_5 g-aiAbs g-aiPointText" style="top:97.4322%;margin-top:-9.9px;left:22.9417%;width:43px;">
+			<p class="g-pstyle1">0.8</p>
+		</div>
+	</div>
+
+<!-- Custom HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+<style>
+.hidden { visibility: hidden; }
+</style>
+
 </div>
 
-<!-- End ai2html - 2023-04-01 18:32 -->
+<!-- End ai2html - 2023-04-07 21:33 -->
+
+
+</div>
+
+<div class="scrolly-overlay">
+	<div class="step" id="step1">
+	  <p>Most of the world's lithium reserve is highly concentrated only in around 20 countries.</p>
+	</div>
+	<div class="step" id="step2">
+	  <p>With around 21 million tons of lithium equivalent, Bolivia has the highest amount. This is close to a fifth of the world's entire reserve.</p>
+	</div>
+	<div class="step" id="step3">
+	  <p>In fact, close to 70 percent of the reserve lies in North and South America.</p>
+	</div>
+	<div class="step" id="step4" style="margin-bottom: 60rem;">
+		<p>Explain South America.</p>
+	</div>
+	<div class="step" id="step5" style="background-color: transparent; margin-bottom: 0;">
+		<p></p>
+	</div>
+  </div>
+
 </section>
 
-<section class="story-body">
-	<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+<script>
+	d3.selectAll("[data-name='bolivia']").classed('hidden', true)
+	d3.select("#bolivia-text").classed('hidden', true)
+	d3.selectAll("[data-name='americas']").classed('hidden', true)
+	d3.select("#g-ai0-23").classed('hidden', true)
 
-	<p class="body-text serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+
+	d3.select("#step1").on('stepin', function(e) {
+		// Make changes for step 1
+		d3.selectAll("[data-name='bolivia']").classed('hidden', true)
+		d3.select("#bolivia-text").classed('hidden', true)
+		d3.selectAll("[data-name='americas']").classed('hidden', true)
+		d3.select("#g-ai0-23").classed('hidden', true)
+	})
+
+	d3.select("#step2").on('stepin', function(e) {
+		// Make changes for step 2
+		d3.selectAll("[data-name='bolivia']").classed('hidden', false)
+		d3.select("#bolivia-text").classed('hidden', false)
+		d3.select("#arrow1").classed('hidden', false)
+	})
+
+		// Undo changes from step 3
+		d3.selectAll("[data-name='americas']").classed('hidden', true)
+		d3.select("#g-ai0-23").classed('hidden', true)
+
+
+	d3.select("#step3").on('stepin', function(e) {
+		// undo changes from step 2
+		d3.select("#bolivia-text").classed('hidden', true)
+		d3.select("#arrow1").classed('hidden', true)
+
+		// Make changes for step 3
+		d3.selectAll("[data-name='americas']").classed('hidden', false)
+		d3.select("#g-ai0-23").classed('hidden', false)
+	})
+
+</script>
+
+<script>
+	const scroller = scrollama()
+
+	scroller
+	  .setup({
+		step: "#scrolly .scrolly-overlay .step",
+		offset: 0.7,
+		debug: false,
+	  })
+	  .onStepEnter(function ({ element, index, direction }) {
+		const event = new CustomEvent("stepin", { detail: { direction: direction } })
+		element.dispatchEvent(event)
+	  })
+	  .onStepExit(function ({ element, index, direction }) {
+		const event = new CustomEvent("stepout", { detail: { direction: direction } })
+		element.dispatchEvent(event)
+	  })
+
+	window.addEventListener("resize", scroller.resize)
+  </script>
+
+<section class="story-body">
+	<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+
+	<p class="body-text sans-serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+</section>
+
+<h2 class="hr-lines" style="margin-top: 60px; margin-bottom: 30px;"> In the Mines </h2>
+
+<section >
+<section class="chart" id="scrolly2">
+<div class="sticky-thing">
+
+
+<!-- Generated by ai2html v0.111.0 - 2023-04-08 09:14 -->
+<!-- ai file: production2.ai -->
+<style media="screen,print">
+	#g-production2-box ,
+	#g-production2-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-production2-box p {
+		margin:0;
+	}
+	#g-production2-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-production2-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-production2-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-production2-box .g-aiPointText p { white-space: nowrap; }
+	#g-production2-large {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-production2-large p {
+		font-family:Roboto;
+		font-weight:400;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(255,255,255);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-production2-large .g-pstyle0 {
+		height:17px;
+	}
+	#g-production2-large .g-pstyle1 {
+		font-weight:700;
+		height:17px;
+		color:rgb(231,255,0);
+	}
+	#g-production2-large .g-pstyle2 {
+		font-weight:700;
+		height:17px;
+	}
+	#g-production2-large .g-pstyle3 {
+		font-weight:700;
+		height:17px;
+		color:rgb(255,105,137);
+	}
+	#g-production2-large .g-pstyle4 {
+		font-weight:700;
+		height:17px;
+		color:rgb(0,231,255);
+	}
+	#g-production2-large .g-pstyle5 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		text-align:center;
+		color:rgb(193,193,193);
+	}
+	#g-production2-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-production2-mobile p {
+		font-family:Roboto;
+		font-weight:400;
+		line-height:14px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:12px;
+		text-align:left;
+		color:rgb(255,255,255);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-production2-mobile .g-pstyle0 {
+		font-weight:700;
+		height:14px;
+		color:rgb(231,255,0);
+	}
+	#g-production2-mobile .g-pstyle1 {
+		font-weight:700;
+		height:14px;
+	}
+	#g-production2-mobile .g-pstyle2 {
+		height:14px;
+	}
+	#g-production2-mobile .g-pstyle3 {
+		font-weight:700;
+		height:14px;
+		color:rgb(255,105,137);
+	}
+	#g-production2-mobile .g-pstyle4 {
+		font-weight:700;
+		height:14px;
+		color:rgb(0,231,255);
+	}
+	#g-production2-mobile .g-pstyle5 {
+		line-height:13px;
+		height:13px;
+		font-size:11px;
+		text-align:center;
+		color:rgb(193,193,193);
+	}
+
+</style>
+
+<div id="g-production2-box" class="ai2html">
+
+	<!-- Artboard: large -->
+	<div id="g-production2-large" class="g-artboard" style="width:1010px; height:730px;" data-aspect-ratio="1.384" data-min-width="1010">
+<div style=""></div>
+		<img id="g-production2-large-img" class="g-production2-large-img g-aiImg" alt="" src="production2-large.png"/>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-production2-large-interaction-img g-aiImg" version="1.2" baseProfile="tiny" id="g-production2-large-interaction-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 1009.5 730" overflow="visible" xml:space="preserve">
+<g>
+	
+		<path id="aus-path" data-name="aus-path" fill="none" stroke="#FF6989" stroke-width="2.5" stroke-linecap="round" d="
+		M38.814,608.407c42.593,0,42.593-4.954,85.187-4.954s42.593,12.882,85.187,12.882s42.593-11.395,85.187-11.395
+		s42.593,2.477,85.187,2.477s42.593-10.404,85.187-10.404c42.593,0,42.593-36.167,85.187-36.167s42.593-176.873,85.187-176.873
+		s42.593,59.453,85.187,59.453c42.593,0,42.593,24.772,85.187,24.772c42.593,0,42.593-76.298,85.187-76.298
+		s42.593-27.745,85.187-27.745"/>
+	
+		<path id="us-path" data-name="us-path" fill="none" stroke="#00E7FF" stroke-width="2.5" stroke-linecap="round" d="
+		M38.814,663.401c42.593,0,42.593,1.486,85.187,1.486s42.593,0,85.187,0s42.593,0,85.187,0s42.593,0,85.187,0
+		s42.593-0.495,85.187-0.495c42.593,0,42.593-1.982,85.187-1.982s42.593-1.982,85.187-1.982s42.593,1.486,85.187,1.486
+		c42.593,0,42.593,2.973,85.187,2.973c42.593,0,42.593-2.973,85.187-2.973s42.593,1.486,85.187,1.486"/>
+	
+		<path id="total-path" data-name="total-path" fill="none" stroke="#E7FF00" stroke-width="2.5" stroke-linecap="round" d="
+		M38.814,502.382c42.593,0,42.593-8.423,85.187-8.423s42.593,21.799,85.187,21.799s42.593-2.973,85.187-2.973
+		s42.593,7.432,85.187,7.432s42.593-43.103,85.187-43.103c42.593,0,42.593-62.921,85.187-62.921s42.593-219.481,85.187-219.481
+		s42.593,41.122,85.187,41.122c42.593,0,42.593,14.863,85.187,14.863c42.593,0,42.593-109.493,85.187-109.493
+		s42.593-115.933,85.187-115.933"/>
+</g>
+<style>
+#g-production2-large-interaction-img rect, #g-production2-large-interaction-img circle, #g-production2-large-interaction-img path, #g-production2-large-interaction-img line, #g-production2-large-interaction-img polyline, #g-production2-large-interaction-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai0-1" class="g-labels g-aiAbs g-aiPointText" style="top:1.6966%;margin-top:-9.4px;left:96.3315%;width:53px;">
+			<p class="g-pstyle0">Total</p>
+		</div>
+		<div id="g-ai0-2" class="g-interaction g-aiAbs g-aiPointText" style="top:1.6966%;margin-top:-9.4px;left:96.3315%;width:53px;">
+			<p class="g-pstyle1">Total</p>
+		</div>
+		<div id="g-ai0-3" class="g-labels g-aiAbs g-aiPointText" style="top:2.9295%;margin-top:-9.4px;left:0.0488%;width:54px;">
+			<p class="g-pstyle0">130K</p>
+		</div>
+		<div id="g-ai0-4" class="g-labels g-aiAbs g-aiPointText" style="top:3.2035%;margin-top:-9.4px;left:4.9386%;width:231px;">
+			<p class="g-pstyle2">Global Lithium production in tons</p>
+		</div>
+		<div id="g-ai0-5" class="g-labels g-aiAbs g-aiPointText" style="top:9.7788%;margin-top:-9.4px;left:0.9185%;width:46px;">
+			<p class="g-pstyle0">120</p>
+		</div>
+		<div id="g-ai0-6" class="g-labels g-aiAbs g-aiPointText" style="top:16.6281%;margin-top:-9.4px;left:0.9185%;width:46px;">
+			<p class="g-pstyle0">110</p>
+		</div>
+		<div id="g-ai0-7" class="g-labels g-aiAbs g-aiPointText" style="top:23.3404%;margin-top:-9.4px;left:0.9185%;width:46px;">
+			<p class="g-pstyle0">100</p>
+		</div>
+		<div id="g-ai0-8" class="g-labels g-aiAbs g-aiPointText" style="top:30.1898%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">90</p>
+		</div>
+		<div id="g-ai0-9" class="g-labels g-aiAbs g-aiPointText" style="top:36.9021%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">80</p>
+		</div>
+		<div id="g-ai0-10" class="g-labels g-aiAbs g-aiPointText" style="top:43.7514%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">70</p>
+		</div>
+		<div id="aus-bold" class="g-interaction g-aiAbs g-aiPointText" style="top:47.724%;margin-top:-9.4px;left:93.9741%;width:78px;">
+			<p class="g-pstyle3">Australia</p>
+		</div>
+		<div id="g-ai0-12" class="g-labels g-aiAbs g-aiPointText" style="top:47.724%;margin-top:-9.4px;left:93.9741%;width:77px;">
+			<p class="g-pstyle0">Australia</p>
+		</div>
+		<div id="g-ai0-13" class="g-labels g-aiAbs g-aiPointText" style="top:50.4637%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">60</p>
+		</div>
+		<div id="g-ai0-14" class="g-labels g-aiAbs g-aiPointText" style="top:57.313%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">50</p>
+		</div>
+		<div id="g-ai0-15" class="g-labels g-aiAbs g-aiPointText" style="top:63.0665%;margin-top:-9.4px;left:96.3525%;width:53px;">
+			<p class="g-pstyle0">Chile</p>
+		</div>
+		<div id="g-ai0-16" class="g-labels g-aiAbs g-aiPointText" style="top:64.0254%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">40</p>
+		</div>
+		<div id="g-ai0-17" class="g-labels g-aiAbs g-aiPointText" style="top:70.8747%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">30</p>
+		</div>
+		<div id="g-ai0-18" class="g-labels g-aiAbs g-aiPointText" style="top:76.3541%;margin-top:-9.4px;left:95.9044%;width:58px;">
+			<p class="g-pstyle0">China</p>
+		</div>
+		<div id="g-ai0-19" class="g-labels g-aiAbs g-aiPointText" style="top:77.587%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai0-20" class="g-labels g-aiAbs g-aiPointText" style="top:84.4363%;margin-top:-9.4px;left:1.6969%;width:38px;">
+			<p class="g-pstyle0">10</p>
+		</div>
+		<div id="g-ai0-21" class="g-labels g-aiAbs g-aiPointText" style="top:85.5322%;margin-top:-9.4px;left:93.4672%;width:82px;">
+			<p class="g-pstyle0">Argentina</p>
+		</div>
+		<div id="g-ai0-22" class="g-labels g-aiAbs g-aiPointText" style="top:90.4637%;margin-top:-9.4px;left:96.9744%;width:47px;">
+			<p class="g-pstyle0">U.S.</p>
+		</div>
+		<div id="us-bold" class="g-interaction g-aiAbs g-aiPointText" style="top:90.4637%;margin-top:-9.4px;left:96.9744%;width:48px;">
+			<p class="g-pstyle4">U.S.</p>
+		</div>
+		<div id="g-ai0-24" class="g-labels g-aiAbs g-aiPointText" style="top:91.2857%;margin-top:-9.4px;left:2.4752%;width:30px;">
+			<p class="g-pstyle0">0</p>
+		</div>
+		<div id="g-ai0-25" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:3.8057%;width:53px;">
+			<p class="g-pstyle0">2011</p>
+		</div>
+		<div id="g-ai0-26" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:10.7086%;width:53px;">
+			<p class="g-pstyle0">2012</p>
+		</div>
+		<div id="g-ai0-27" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:19.1429%;width:53px;">
+			<p class="g-pstyle0">2013</p>
+		</div>
+		<div id="g-ai0-28" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:27.5773%;width:53px;">
+			<p class="g-pstyle0">2014</p>
+		</div>
+		<div id="g-ai0-29" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:36.0116%;width:53px;">
+			<p class="g-pstyle0">2015</p>
+		</div>
+		<div id="g-ai0-30" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:44.446%;width:53px;">
+			<p class="g-pstyle0">2016</p>
+		</div>
+		<div id="g-ai0-31" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:52.8802%;width:53px;">
+			<p class="g-pstyle0">2017</p>
+		</div>
+		<div id="g-ai0-32" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:61.3145%;width:53px;">
+			<p class="g-pstyle0">2018</p>
+		</div>
+		<div id="g-ai0-33" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:69.7489%;width:53px;">
+			<p class="g-pstyle0">2019</p>
+		</div>
+		<div id="g-ai0-34" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:78.1831%;width:53px;">
+			<p class="g-pstyle0">2020</p>
+		</div>
+		<div id="g-ai0-35" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:86.6175%;width:53px;">
+			<p class="g-pstyle0">2021</p>
+		</div>
+		<div id="g-ai0-36" class="g-labels g-aiAbs g-aiPointText" style="top:93.2035%;margin-top:-9.4px;left:95.0518%;width:53px;">
+			<p class="g-pstyle0">2022</p>
+		</div>
+		<div id="g-ai0-37" class="g-labels g-aiAbs g-aiPointText" style="top:98.6058%;margin-top:-8.8px;left:9.6269%;margin-left:-99px;width:198px;">
+			<p class="g-pstyle5">Source: U.S. Geological Survey</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-production2-mobile" class="g-artboard" style="max-width: 390px;max-height: 620px" data-aspect-ratio="0.629" data-min-width="0" data-max-width="1009">
+<div style="padding: 0 0 158.9744% 0;"></div>
+		<img id="g-production2-mobile-img" class="g-production2-mobile-img g-aiImg" alt="" src="production2-mobile.png"/>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-production2-mobile-interaction-img g-aiImg" version="1.2" baseProfile="tiny" id="g-production2-mobile-interaction-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 390 620" overflow="visible" xml:space="preserve">
+<g>
+	
+		<path id="aus-path-2" data-name="aus-path" fill="none" stroke="#FF6989" stroke-width="2.5" stroke-linecap="round" d="
+		M39.185,517.37c15.212,0,15.212-4.191,30.424-4.191s15.212,10.896,30.424,10.896s15.212-9.639,30.424-9.639
+		s15.212,2.095,30.424,2.095s15.212-8.801,30.424-8.801s15.212-30.593,30.424-30.593c15.212,0,15.212-149.611,30.424-149.611
+		c15.212,0,15.212,50.29,30.424,50.29c15.212,0,15.212,20.954,30.424,20.954s15.212-64.538,30.424-64.538
+		s15.212-23.468,30.424-23.468"/>
+	
+		<path id="us-path-2" data-name="us-path" fill="none" stroke="#00E7FF" stroke-width="2.5" stroke-linecap="round" d="
+		M39.185,563.888c15.212,0,15.212,1.257,30.424,1.257s15.212,0,30.424,0s15.212,0,30.424,0s15.212,0,30.424,0
+		s15.212-0.419,30.424-0.419s15.212-1.676,30.424-1.676c15.212,0,15.212-1.676,30.424-1.676c15.212,0,15.212,1.257,30.424,1.257
+		c15.212,0,15.212,2.515,30.424,2.515s15.212-2.515,30.424-2.515s15.212,1.257,30.424,1.257"/>
+</g>
+<style>
+#g-production2-mobile-interaction-img rect, #g-production2-mobile-interaction-img circle, #g-production2-mobile-interaction-img path, #g-production2-mobile-interaction-img line, #g-production2-mobile-interaction-img polyline, #g-production2-mobile-interaction-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai1-1" class="g-labels g-aiAbs g-aiPointText" style="top:2.2048%;margin-top:-7.7px;left:92.002%;width:48px;">
+			<p class="g-pstyle0">Total</p>
+		</div>
+		<div id="g-ai1-2" class="g-labels g-aiAbs g-aiPointText" style="top:3.3339%;margin-top:-7.7px;left:12.841%;width:198px;">
+			<p class="g-pstyle1">Global Lithium production in tons</p>
+		</div>
+		<div id="g-ai1-3" class="g-labels g-aiAbs g-aiPointText" style="top:3.4951%;margin-top:-7.7px;left:0.8974%;width:49px;">
+			<p class="g-pstyle2">130K</p>
+		</div>
+		<div id="g-ai1-4" class="g-labels g-aiAbs g-aiPointText" style="top:10.1081%;margin-top:-7.7px;left:2.8025%;width:42px;">
+			<p class="g-pstyle2">120</p>
+		</div>
+		<div id="g-ai1-5" class="g-labels g-aiAbs g-aiPointText" style="top:16.8822%;margin-top:-7.7px;left:2.8025%;width:42px;">
+			<p class="g-pstyle2">110</p>
+		</div>
+		<div id="g-ai1-6" class="g-labels g-aiAbs g-aiPointText" style="top:23.6564%;margin-top:-7.7px;left:2.8025%;width:42px;">
+			<p class="g-pstyle2">100</p>
+		</div>
+		<div id="g-ai1-7" class="g-labels g-aiAbs g-aiPointText" style="top:30.4306%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">90</p>
+		</div>
+		<div id="g-ai1-8" class="g-labels g-aiAbs g-aiPointText" style="top:37.2048%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">80</p>
+		</div>
+		<div id="g-ai1-9" class="g-labels g-aiAbs g-aiPointText" style="top:43.979%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">70</p>
+		</div>
+		<div id="g-ai1-10" class="g-labels g-aiAbs g-aiPointText" style="top:48.4951%;margin-top:-7.7px;left:86.4884%;width:69px;">
+			<p class="g-pstyle2">Australia</p>
+		</div>
+		<div id="aus-bold" class="g-interaction g-aiAbs g-aiPointText" style="top:48.4951%;margin-top:-7.7px;left:86.4884%;width:70px;">
+			<p class="g-pstyle3">Australia</p>
+		</div>
+		<div id="g-ai1-12" class="g-labels g-aiAbs g-aiPointText" style="top:50.7532%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">60</p>
+		</div>
+		<div id="g-ai1-13" class="g-labels g-aiAbs g-aiPointText" style="top:57.5274%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">50</p>
+		</div>
+		<div id="g-ai1-14" class="g-labels g-aiAbs g-aiPointText" style="top:63.8177%;margin-top:-7.7px;left:92.0212%;width:48px;">
+			<p class="g-pstyle2">Chile</p>
+		</div>
+		<div id="g-ai1-15" class="g-labels g-aiAbs g-aiPointText" style="top:64.3016%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">40</p>
+		</div>
+		<div id="g-ai1-16" class="g-labels g-aiAbs g-aiPointText" style="top:71.0758%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">30</p>
+		</div>
+		<div id="g-ai1-17" class="g-labels g-aiAbs g-aiPointText" style="top:77.3661%;margin-top:-7.7px;left:91.3507%;width:52px;">
+			<p class="g-pstyle2">China</p>
+		</div>
+		<div id="g-ai1-18" class="g-labels g-aiAbs g-aiPointText" style="top:77.85%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">20</p>
+		</div>
+		<div id="g-ai1-19" class="g-labels g-aiAbs g-aiPointText" style="top:84.4629%;margin-top:-7.7px;left:4.5075%;width:35px;">
+			<p class="g-pstyle2">10</p>
+		</div>
+		<div id="us-bold" class="g-interaction g-aiAbs g-aiPointText" style="top:88.8177%;margin-top:-7.7px;left:94.1354%;width:44px;">
+			<p class="g-pstyle4">U.S.</p>
+		</div>
+		<div id="g-ai1-21" class="g-labels g-aiAbs g-aiPointText" style="top:88.8177%;margin-top:-7.7px;left:94.1354%;width:43px;">
+			<p class="g-pstyle2">U.S.</p>
+		</div>
+		<div id="g-ai1-22" class="g-labels g-aiAbs g-aiPointText" style="top:91.2371%;margin-top:-7.7px;left:6.2127%;width:29px;">
+			<p class="g-pstyle2">0</p>
+		</div>
+		<div id="g-ai1-23" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:10.013%;width:49px;">
+			<p class="g-pstyle2">2011</p>
+		</div>
+		<div id="g-ai1-24" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:24.1987%;width:49px;">
+			<p class="g-pstyle2">2013</p>
+		</div>
+		<div id="g-ai1-25" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:39.8007%;width:49px;">
+			<p class="g-pstyle2">2015</p>
+		</div>
+		<div id="g-ai1-26" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:55.4031%;width:49px;">
+			<p class="g-pstyle2">2017</p>
+		</div>
+		<div id="g-ai1-27" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:71.0051%;width:49px;">
+			<p class="g-pstyle2">2019</p>
+		</div>
+		<div id="g-ai1-28" class="g-labels g-aiAbs g-aiPointText" style="top:93.3339%;margin-top:-7.7px;left:86.6071%;width:49px;">
+			<p class="g-pstyle2">2021</p>
+		</div>
+		<div id="g-ai1-29" class="g-labels g-aiAbs g-aiPointText" style="top:98.5799%;margin-top:-7.2px;left:22.633%;margin-left:-85.5px;width:171px;">
+			<p class="g-pstyle5">Source: U.S. Geological Survey</p>
+		</div>
+	</div>
+
+<!-- Custom HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+<style>
+.hidden { visibility: hidden; }
+</style>
+
+</div>
+
+<!-- End ai2html - 2023-04-08 09:14 -->
+
+</div>
+
+<div class="scrolly-overlay">
+	<div class="step" id="step1">
+	  <p>Total.</p>
+	</div>
+	<div class="step" id="step2">
+	  <p>Highlight steep increases in total</p>
+	</div>
+	<div class="step" id="step3">
+	  <p>Argentina is a biggest producer</p>
+	</div>
+	<div class="step" id="step4" style="margin-bottom: 0;">
+		<p>U.S. mines very little.</p>
+	</div>
+  </div>
+
+</section>
+
+<script>
+	d3.select("#aus-path").classed('hidden', true)
+	d3.select("#aus-bold").classed('hidden', true)
+	d3.select("#us-path").classed('hidden', true)
+	d3.select("#us-bold").classed('hidden', true)
+
+	d3.select("#step1").on('stepin', function(e) {
+		// Make changes for step 1
+	
+	})
+
+	d3.select("#step2").on('stepin', function(e) {
+		// Make changes for step 2 (Remove annotations)
+		// Add Annotations
+	})
+
+		// Undo changes from step 3 (Remove annotations)
+	
+
+
+	d3.select("#step3").on('stepin', function(e) {
+		// undo changes from step 2
+	
+
+		// Make changes for step 3
+	
+	})
+
+</script>
+
+
+<script>
+	scroller
+	  .setup({
+		step: "#scrolly2 .scrolly-overlay .step",
+		offset: 0.7,
+		debug: false,
+	  })
+	  .onStepEnter(function ({ element, index, direction }) {
+		const event = new CustomEvent("stepin", { detail: { direction: direction } })
+		element.dispatchEvent(event)
+	  })
+	  .onStepExit(function ({ element, index, direction }) {
+		const event = new CustomEvent("stepout", { detail: { direction: direction } })
+		element.dispatchEvent(event)
+	  })
+
+	window.addEventListener("resize", scroller.resize)
+  </script>
+
+
+<section class="story-body">
+	<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+
+	<p class="body-text sans-serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+</section>
+
+<section style="width: 100%;">
+	<img src="silver peak.jpg" style="width:100%; height: 100vh;"></img>
 </section>
 
 <h2 class="hr-lines" style="margin-top: 70px; margin-bottom: 30px;"> Entering the U.S. </h2>
@@ -857,7 +1930,7 @@
 	</section>
 
 	<section class="story-body">
-		<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+		<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
 	</section>
 
 <h2 class="hr-lines" style="margin-top: 70px; margin-bottom: 30px;"> Becoming Batteries </h2>
@@ -1096,9 +2169,9 @@
 
 
 <section class="story-body">
-	<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+	<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
 
-	<p class="body-text serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+	<p class="body-text sans-serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
 </section>
 
 <h2 class="hr-lines" style="margin-top: 70px; margin-bottom: 30px;"> To Recycling Stations </h2>
@@ -1197,44 +2270,16 @@
 
 </section>
 <section class="story-body" style="margin-top: 80px">
-	<p class="body-text serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
+	<p class="body-text sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra, mi vitae varius condimentum, velit mauris vehicula eros, ac dapibus nisi justo non tellus. Nullam aliquam commodo odio tincidunt commodo. Etiam auctor accumsan condimentum. Sed tristique odio et posuere rutrum. Donec urna magna, congue sit amet magna ut, facilisis scelerisque ante. Nam mattis enim et maximus mattis. Fusce vulputate nisi turpis, eu feugiat metus pulvinar sit amet. Praesent mollis scelerisque neque, ut placerat elit imperdiet quis. Integer tempor, lectus sit amet sollicitudin imperdiet, lacus lorem imperdiet sapien, vitae aliquet neque nisl a orci. Quisque feugiat id felis eget cursus. Ut dolor lorem, finibus suscipit tristique ac, maximus vel lacus. Nulla facilisi. Curabitur vehicula pellentesque aliquet.</p>
 
-	<p class="body-text serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
+	<p class="body-text sans-serif">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque porta nisl vel diam convallis, eget ultricies libero vestibulum. In sapien est, dapibus eu commodo nec, vehicula ac nisi. Morbi tincidunt erat vel massa auctor, vitae auctor purus luctus. Aenean elementum volutpat sem. Donec lacinia erat ut pellentesque mattis. Phasellus suscipit, diam eget dictum facilisis, sem lectus cursus urna, at condimentum leo ante in orci. Duis magna neque, aliquam a dolor sit amet, laoreet viverra lorem. Nam at iaculis dui. Nunc ac hendrerit ligula, et vulputate leo. Suspendisse faucibus elit eget posuere commodo. Phasellus iaculis erat eu mattis volutpat. Aliquam blandit sodales urna, dignissim pulvinar erat. Integer id lacus in ligula rutrum tincidunt.</p>
 </section>
 
     <section class="footer sans-serif">
         <p class="note">This article was written by June Kim. For more information, visit the <a href="https://github.com/junekim6/jeju-curtailment">Github repository</a> for the story. To read additional stories, visit the website <a href="https://junekim6.github.io/" target="_blank">here.</a></p>
       </section>
 
-	  <script>
-      
-		//  scrollytelling code goes here
-		d3.select("#step2").on('stepin', function() {
-		  d3.select("img").attr("src", "image1.jpg")
-		})
-		
-	  </script>
-  
-	  <script>
-		const scroller = scrollama()
-  
-		scroller
-		  .setup({
-			step: "#scrolly .scrolly-overlay .step",
-			offset: 0.75,
-			debug: false,
-		  })
-		  .onStepEnter(function ({ element, index, direction }) {
-			const event = new CustomEvent("stepin", { detail: { direction: direction } })
-			element.dispatchEvent(event)
-		  })
-		  .onStepExit(function ({ element, index, direction }) {
-			const event = new CustomEvent("stepout", { detail: { direction: direction } })
-			element.dispatchEvent(event)
-		  })
-  
-		window.addEventListener("resize", scroller.resize)
-	  </script>
+	
 
 </body>
 

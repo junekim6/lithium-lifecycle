@@ -1,0 +1,121 @@
+year,country,production_in_tons,production_in_1000_tons
+2011,Argentina,3000.0,3.0
+2012,Argentina,2700.0,3.0
+2013,Argentina,2500.0,2.0
+2014,Argentina,3200.0,3.0
+2015,Argentina,3600.0,4.0
+2016,Argentina,5800.0,6.0
+2017,Argentina,5700.0,6.0
+2018,Argentina,6400.0,6.0
+2019,Argentina,6300.0,6.0
+2020,Argentina,5900.0,6.0
+2021,Argentina,6000.0,6.0
+2022,Argentina,6200.0,6.0
+2011,Australia ,11700.0,12.0
+2012,Australia ,12700.0,13.0
+2013,Australia ,10100.0,10.0
+2014,Australia ,12400.0,12.0
+2015,Australia ,11900.0,12.0
+2016,Australia ,14000.0,14.0
+2017,Australia ,21300.0,21.0
+2018,Australia ,57000.0,57.0
+2019,Australia ,45000.0,45.0
+2020,Australia ,40000.0,40.0
+2021,Australia ,55400.0,55.0
+2022,Australia ,61000.0,61.0
+2011,Brazil,300.0,0.0
+2012,Brazil,200.0,0.0
+2013,Brazil,400.0,0.0
+2014,Brazil,200.0,0.0
+2015,Brazil,100.0,0.0
+2016,Brazil,200.0,0.0
+2017,Brazil,300.0,0.0
+2018,Brazil,1000.0,1.0
+2019,Brazil,2200.0,2.0
+2020,Brazil,1400.0,1.0
+2021,Brazil,1500.0,2.0
+2022,Brazil,2200.0,2.0
+2011,Chile,11900.0,12.0
+2012,Chile,12300.0,12.0
+2013,Chile,10500.0,10.0
+2014,Chile,10800.0,11.0
+2015,Chile,9800.0,10.0
+2016,Chile,13600.0,14.0
+2017,Chile,14200.0,14.0
+2018,Chile,17000.0,17.0
+2019,Chile,19200.0,19.0
+2020,Chile,21600.0,22.0
+2021,Chile,26000.0,26.0
+2022,Chile,39000.0,39.0
+2011,China,4100.0,4.0
+2012,China,4500.0,4.0
+2013,China,4700.0,5.0
+2014,China,2300.0,2.0
+2015,China,2000.0,2.0
+2016,China,2300.0,2.0
+2017,China,6800.0,7.0
+2018,China,7100.0,7.0
+2019,China,10800.0,11.0
+2020,China,13300.0,13.0
+2021,China,14000.0,14.0
+2022,China,19000.0,19.0
+2011,Portugal,600.0,1.0
+2012,Portugal,300.0,0.0
+2013,Portugal,300.0,0.0
+2014,Portugal,300.0,0.0
+2015,Portugal,300.0,0.0
+2016,Portugal,400.0,0.0
+2017,Portugal,800.0,1.0
+2018,Portugal,1200.0,1.0
+2019,Portugal,900.0,1.0
+2020,Portugal,300.0,0.0
+2021,Portugal,900.0,1.0
+2022,Portugal,600.0,1.0
+2011,United States,1000.0,1.0
+2012,United States,1000.0,1.0
+2013,United States,900.0,1.0
+2014,United States,900.0,1.0
+2015,United States,900.0,1.0
+2016,United States,900.0,1.0
+2017,United States,900.0,1.0
+2018,United States,900.0,1.0
+2019,United States,900.0,1.0
+2020,United States,900.0,1.0
+2021,United States,900.0,1.0
+2022,United States,600.0,1.0
+2011,Zimbabwe,500.0,0.0
+2012,Zimbabwe,1100.0,1.0
+2013,Zimbabwe,1000.0,1.0
+2014,Zimbabwe,900.0,1.0
+2015,Zimbabwe,900.0,1.0
+2016,Zimbabwe,1000.0,1.0
+2017,Zimbabwe,800.0,1.0
+2018,Zimbabwe,1600.0,2.0
+2019,Zimbabwe,1200.0,1.0
+2020,Zimbabwe,400.0,0.0
+2021,Zimbabwe,1200.0,1.0
+2022,Zimbabwe,800.0,1.0
+2011,Others,0.0,0.0
+2012,Others,0.0,0.0
+2013,Others,0.0,0.0
+2014,Others,0.0,0.0
+2015,Others,0.0,0.0
+2016,Others,0.0,0.0
+2017,Others,100.0,0.0
+2018,Others,3000.0,3.0
+2019,Others,400.0,0.0
+2020,Others,100.0,0.0
+2021,Others,100.0,0.0
+2022,Others,0.0,0.0
+2011,Total,33100.0,
+2012,Total,34800.0,
+2013,Total,30400.0,
+2014,Total,31000.0,
+2015,Total,29500.0,
+2016,Total,38200.0,
+2017,Total,50900.0,
+2018,Total,95200.0,
+2019,Total,86900.0,
+2020,Total,83900.0,
+2021,Total,106000.0,
+2022,Total,129400.0,
