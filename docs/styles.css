@@ -389,7 +389,7 @@ p.caption {
 
   .step {
     margin: 0 auto 2rem auto;
-    margin-bottom: 45rem;
+    margin-bottom: 100vh;
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
     border-radius: 15px;
