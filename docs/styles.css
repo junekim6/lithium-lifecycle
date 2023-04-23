@@ -402,8 +402,21 @@ p.caption {
     font-size: 1.18rem;
   }
 
-  .hidden {
+  /* .hidden {
     visibility: hidden;
+  } */
+
+  g, text, path {
+    opacity: 1;
+    transition: opacity 2s;
+  }
+  
+  g.hidden, text.hidden, path.hidden {
+    opacity: 0;
+  }
+  
+  g:not(.hidden), text:not(.hidden), path:not(.hidden) {
+    opacity: 1;
   }
 
   /* When it's less than 700 pixels wide, do normal scrollytelling */
